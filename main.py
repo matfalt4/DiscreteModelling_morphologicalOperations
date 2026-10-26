@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
-from zad_lab_2_lib import dylatacja, erozja, otwarcie_morf, domkniecie_morf, splot
+from morph_op_lib import dylatacja, erozja, otwarcie_morf, domkniecie_morf, splot
 
-obraz = Image.open("/Users/mateuszfaltyn/Desktop/studia/ModDysk/lab_02/Screenshot 2026-10-25 at 12.16.51.png").convert("L")
+obraz = Image.open("Screenshot 2026-10-25 at 12.16.51.png").convert("L")
 obraz = np.array(obraz, dtype=np.uint8)
 
 r = 100
